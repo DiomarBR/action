@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #99a1a9;
+}
+
+form {
+  background-color: white;
+  max-width: 500px;
+  width: 70%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form h3 {
+  text-align: center;
+  color: #112838;
+  font-family: "Times New Roman", Times, serif;
+}
+
+form img {
+  display: flex;
+  width: 29%;
+}
+
+form input[type=text],
+form input[type=password] {
+  display: inline;
+  align-items: center;
+  border: 1px solid black;
+  height: 30px;
+  width: 60%;
+  margin: 2px;
+}/*# sourceMappingURL=style.css.map */

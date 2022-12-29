@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="\favicon_io\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <form>
+        <h3>Login Action system</h3>
+        <img src="\img\Logo.png" alt="Logo Action">
+        <input id="logemail" type="text" name="e-mail" placeholder="Seu e-mail...">
+        <input id="logpass" type="password" name="senha" placeholder="Sua senha...">
+        <input type="submit" name="acao" onclick="logar(); return false" value="Enviar">
+    </form>
+    <script>
+
+        function logar(){
+  
+          var login = document.getElementById('logemail').value;
+          var password = document.getElementById('logpass').value;
+  
+          if(login == "diomarbr4@gmail.com" && password == "1234"){
+            alert('Sucesso');
+            location.href = "principal\index.html";
+          }else{
+            alert('Usuario ou senha incorreta!!')
+          }
+        }
+      </script>
+</body>
+</html>l
