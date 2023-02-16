@@ -94,12 +94,6 @@ main {
   transition: opacity 0.3s;
 }
 
-.field input:focus:-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
 .field input:focus::placeholder {
   opacity: 0;
   transition: opacity 0.3s;

@@ -3,37 +3,63 @@
   margin: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-.logo {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+:root {
+  --cor-fundo: rgb(34, 41, 37);
+  --cor-hover: rgb(118, 180, 145);
+  --cor-primaria: rgb(231, 241, 236);
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: red;
-  height: 8vh;
+  position: fixed;
+  min-width: 100%;
+  background-color: red;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
+.dp-menu {
+  float: right;
 }
 
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 3px;
+.dp-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dp-menu ul {
+  background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.dp-menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul {
+  width: 150px;
+}
+
+.dp-menu ul ul li a {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
