@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simulador de Navegador com Abas</title>
+    <style>
+      /* Estilos da barra de endereço */
+      #address-bar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #ccc;
+      }
+      #address-bar input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+      #address-bar button {
+        padding: 5px 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      /* Estilos das abas */
+      .tab {
+        padding: 10px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        cursor: pointer;
+      }
+      .tab.active {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .tab-container {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+      }
+      /* Estilos da área do navegador */
+      #browser-window {
+        height: calc(100vh - 100px);
+        width: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de endereço -->
+    <div id="address-bar">
+      <button id="back-button">Voltar</button>
+      <button id="new-tab-button">Nova Aba</button>
+      <input type="text" placeholder="Digite uma URL">
+      <button id="navigate-button">Ir</button>
+    </div>
+    <!-- Abas -->
+    <div class="tab-container"></div>
+    <!-- Área do navegador -->
+    <iframe id="browser-window"></iframe>
+    <!-- Scripts JavaScript -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

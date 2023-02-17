@@ -4,15 +4,15 @@
 }
 
 :root {
-  --cor-fundo: #D94423;
-  --cor-hover: #3D5E73;
-  --cor-primaria: #011826;
+  --cor-fundo: rgb(34, 41, 37);
+  --cor-hover: rgb(118, 180, 145);
+  --cor-primaria: rgb(231, 241, 236);
 }
 
 nav {
   position: fixed;
   min-width: 100%;
-  background-color: #D94423;
+  background-color: red;
 }
 
 .dp-menu {
