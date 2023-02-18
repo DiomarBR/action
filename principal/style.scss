@@ -1,17 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 :root {
     --cor-fundo: #D94423;
     --cor-hover: #3D5E73;
     --cor-primaria: #011826;
 }
-nav{
-    position: fixed;
-    z-index: 5;
-    min-width: 100%;
-    max-height: 45px;
+
+.painel {
+    padding: 1rem;
     background-color: #D94423;
 }
 .dp-menu{
@@ -72,13 +72,46 @@ nav{
 .dp-menu ul ul li a {
     display: block;
 }
+
 #myTab{
 position: relative;
 top: 50px;
 }
-iframe{
-    position: absolute;
-    top: 90px;
-    min-height: 100vh;
-    min-width: 100vw;
+
+.abas {
+    margin-top: 0.3rem;
+
+    div {
+        background: white;
+        padding: 10px;
+    }
+    
+    .abasNav {
+        margin-bottom: -3px;
+        
+    }
+
+    div {
+        display: none;
+    }
+
+    div:target {
+        display: block;
+    }
+
+    .abasNav a.focus,
+    .abasNav a:focus {
+        background: #3D5E73;
+        color: #FFFFFF;
+    }
+
+    .abasNav a {
+        display: inline-block;
+        padding: 0.5rem;
+        border: none;
+        text-decoration: none;
+        background-color: #c7c7c7;
+        border-radius: 3px 3px 0 0;
+        margin-left: -4px;
+    }
 }
