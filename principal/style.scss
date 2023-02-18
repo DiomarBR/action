@@ -9,6 +9,7 @@
 }
 nav{
     position: fixed;
+    z-index: 5;
     min-width: 100%;
     max-height: 45px;
     background-color: #D94423;
@@ -49,8 +50,18 @@ nav{
     left: 0;
     position: absolute;
 }
+.dp-menu ul ul ul {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    left: -200px;
+    top: 5px;
+}
+.dp-menu ul ul li:hover .sub-2 {
+    display: block;
+}
 
-.dp-menu ul li:hover ul {
+.dp-menu ul li:hover .sub-1 {
     display: block;
 }
 
