@@ -12,6 +12,7 @@
 nav {
   position: fixed;
   min-width: 100%;
+  max-height: 45px;
   background-color: #D94423;
 }
 
@@ -62,4 +63,16 @@ nav {
 
 .dp-menu ul ul li a {
   display: block;
+}
+
+#myTab {
+  position: relative;
+  top: 50px;
+}
+
+iframe {
+  position: absolute;
+  top: 90px;
+  min-height: 100vh;
+  min-width: 100vw;
 }/*# sourceMappingURL=style.css.map */
