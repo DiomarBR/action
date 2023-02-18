@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -9,11 +10,8 @@
   --cor-primaria: #011826;
 }
 
-nav {
-  position: fixed;
-  z-index: 5;
-  min-width: 100%;
-  max-height: 45px;
+.painel {
+  padding: 1rem;
   background-color: #D94423;
 }
 
@@ -83,9 +81,33 @@ nav {
   top: 50px;
 }
 
-iframe {
-  position: absolute;
-  top: 90px;
-  min-height: 100vh;
-  min-width: 100vw;
+.abas {
+  margin-top: 0.3rem;
+}
+.abas div {
+  background: white;
+  padding: 10px;
+}
+.abas .abasNav {
+  margin-bottom: -3px;
+}
+.abas div {
+  display: none;
+}
+.abas div:target {
+  display: block;
+}
+.abas .abasNav a.focus,
+.abas .abasNav a:focus {
+  background: #3D5E73;
+  color: #FFFFFF;
+}
+.abas .abasNav a {
+  display: inline-block;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
+  background-color: #c7c7c7;
+  border-radius: 3px 3px 0 0;
+  margin-left: -4px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,105 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="\favicon_io\favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="\favicon_io\favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>principal</title>
-</head>
-<body>
-  <header>
-      <nav>
-          <a class="logo" href="#">Paineis e relatórios</a>
-          <div class="dp-menu">
-              <ul>
-                  <li>
-                      <a href="#">Cadastros</a>
-                      <ul class="sub-1">
-                          <li>
-                            <a href="#">Pessoas</a>
-                            <ul class="sub-2">
-                              <li>
-                                <a href="#">Cadastro geral de pessoas</a>
-                              </li>
-                              <li>
-                                <a href="#">Perfil de pessoas</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">Financeiro</a>
-                            <ul class="sub-2">
-                              <li>
-                                <a href="#">Tipos de contas</a>
-                              </li>
-                              <li>
-                                <a href="#">Formas de pagamentos</a>
-                              </li>
-                              <li>
-                                <a href="#">Tipos de cobranças</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">Materiais</a>
-                            <ul class="sub-2">
-                              <li>
-                                <a href="#">Materiais/Produtos</a>
-                              </li>
-                              <li>
-                                <a href="#">Grupos de materiais</a>
-                              </li>
-                              <li>
-                                <a href="#">Classe de materiais</a>
-                              </li>
-                              <li>
-                                <a href="#">Tipo de materiais</a>
-                              </li>
-                            </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li>
-                    <a href="#">Preparação</a>
-                  </li>
-                  <li>
-                    <a href="#">Análise</a>
-                  </li>
-                  <li>
-                    <a href="#">Relatórios</a>
-                  </li>
-                  <li>
-                    <a href="#">Configuração</a>
-                  </li>
+  </head>
+  <body>
+    <header>
+      <nav class="painel">
+        <a class="logo" href="#">Paineis e relatórios</a>
+        <div class="dp-menu">
+          <ul>
+            <li>
+              <a href="#">Cadastros</a>
+              <ul class="sub-1">
+                <li>
+                  <a href="#">Pessoas</a>
+                  <ul class="sub-2">
+                    <li>
+                      <a href="#">Cadastro geral de pessoas</a>
+                    </li>
+                    <li>
+                      <a href="#">Perfil de pessoas</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Financeiro</a>
+                  <ul class="sub-2">
+                    <li>
+                      <a href="#">Tipos de contas</a>
+                    </li>
+                    <li>
+                      <a href="#">Formas de pagamentos</a>
+                    </li>
+                    <li>
+                      <a href="#">Tipos de cobranças</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Materiais</a>
+                  <ul class="sub-2">
+                    <li>
+                      <a href="#">Materiais/Produtos</a>
+                    </li>
+                    <li>
+                      <a href="#">Grupos de materiais</a>
+                    </li>
+                    <li>
+                      <a href="#">Classe de materiais</a>
+                    </li>
+                    <li>
+                      <a href="#">Tipo de materiais</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
-          </div>
-      </nav>  
-  </header>
-  <main>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><iframe src="/Cadastro/pessoas/index.html" frameborder="0"></iframe></div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><iframe src="/Cadastro/pessoas/index.html" frameborder="0"></iframe></div>
-          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="https://getbootstrap.com/docs/5.3/getting-started/introduction/" frameborder="0"></iframe></div>
-          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"><iframe src="https://getbootstrap.com/docs/5.3/getting-started/introduction/" frameborder="0"></iframe></div>
+            </li>
+            <li>
+              <a href="#">Preparação</a>
+            </li>
+            <li>
+              <a href="#">Análise</a>
+            </li>
+            <li>
+              <a href="#">Relatórios</a>
+            </li>
+            <li>
+              <a href="#">Configuração</a>
+            </li>
+          </ul>
         </div>
-  </main> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+      </nav>
+    </header>
+
+    <section>
+      <div class="abas">
+        <nav class="abasNav">
+          <a href="#aba1">Nosso Portal</a>
+          <a href="#aba2">Consiliação</a>
+          <a href="#aba3">Preparação de Dados</a>
+          <a href="#aba4">Cadastro de Dados</a>
+        </nav>
+
+        <div id="aba1">
+          <h1>Nosso Portal</h1>
+          <p>Text1</p>
+        </div>
+        <div id="aba2">
+          <h1>Consiliação</h1>
+          <p>Text2</p>
+        </div>
+        <div id="aba3">
+          <h1>Preparação de Dados</h1>
+          <p>Text3</p>
+        </div>
+        <div id="aba4">
+          <h1>Cadastro de Dados</h1>
+          <p>Text4</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
